@@ -90,7 +90,7 @@ export default {
     })
   },
   render () {
-    //渲染插槽
+    // $slots.default表示slot中的所有子组件（包括换行）
     const slot = this.$slots.default
     //获取第一个节点
     const vnode: VNode = getFirstComponentChild(slot)
